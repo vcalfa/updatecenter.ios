@@ -14,15 +14,16 @@ Pod::Spec.new do |s|
   s.source           = { :git => 'https://github.com/unitedclassifiedsapps/updatecenter.ios.git', :tag => s.version.to_s }
 
   s.ios.deployment_target = '9.0'
-
+  s.swift_version    = "4.2"
   s.source_files = 'UpdateCenter/Classes/**/*'
 
    s.resource_bundles = {
      'UpdateCenter' => ['UpdateCenter/Assets/*.plist']
    }
 
+  s.dependency 'Firebase', '4.13.0'
   s.dependency 'Firebase/RemoteConfig', '4.13.0'
-  s.framework      = ['FirebaseABTesting', 'FirebaseCore', 'FirebaseCoreDiagnostics', 'FirebaseInstanceID', 'FirebaseNanoPB', 'FirebaseRemoteConfig', 'Protobuf']
-
+  
+  #s.framework      = ['FirebaseABTesting', 'FirebaseCore', 'FirebaseCoreDiagnostics', 'FirebaseInstanceID', 'FirebaseNanoPB', 'FirebaseRemoteConfig', 'Protobuf']
   #s.static_framework = true
 end
