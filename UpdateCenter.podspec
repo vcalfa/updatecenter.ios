@@ -22,8 +22,8 @@ Pod::Spec.new do |s|
    }
 
   s.dependency 'Firebase', '4.13.0'
-  s.dependency 'Firebase/RemoteConfig', '4.13.0'
-  
+  s.dependency 'FirebaseRemoteConfig', '4.13.0'
+
   #s.framework      = ['FirebaseABTesting', 'FirebaseCore', 'FirebaseCoreDiagnostics', 'FirebaseInstanceID', 'FirebaseNanoPB', 'FirebaseRemoteConfig', 'Protobuf']
   #s.static_framework = true
 end
